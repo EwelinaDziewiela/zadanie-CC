@@ -19,14 +19,9 @@
 
 .post-btn {
   position: absolute;
-  top: 150px;
-  background-color: #bfdacb;
-  border: none;
-  text-transform: uppercase;
-  font-size: 10px;
-  font-weight: 700; }
+  top: 150px; }
 
-.close-btn {
+.close-btn, .post-btn {
   background-color: #bfdacb;
   border: none;
   text-transform: uppercase;
@@ -36,27 +31,19 @@
 
 .post-btn:hover, .close-btn:hover {
   color: white;
-  background: #bfdacb; }
+  background-color: #5f9689; }
 
-.post-btn:focus, .close-btn:focus {
-  background-color: #bfdacb;
+.post-btn:focus, .close-btn:focus, .post-btn:active, .close-btn:active, .post-btn:active:focus, .btn-default:active:focus {
+  background-color: #5f9689;
   color: white;
-  border-color: #bfdacb;
-  outline: none; }
-
-.post-btn:active, .close-btn:active {
-  background-color: #bfdacb;
-  color: white;
-  border-color: #bfdacb;
+  border-color: #5f9689;
   outline: none; }
 
 .modal-content {
   border: 1px solid #bfdacb;
   border-radius: 2px; }
-  .modal-content .modal-header {
+  .modal-content .modal-header, .modal-content .modal-footer {
     border-bottom: 1px solid #bfdacb; }
-  .modal-content .modal-footer {
-    border-top: 1px solid #bfdacb; }
 
 @media (max-width: 522px) {
   .single-post__wrapper {

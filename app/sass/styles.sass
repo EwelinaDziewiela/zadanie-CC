@@ -1,3 +1,6 @@
+$primary-color: #bfdacb
+$hover-color: #5f9689
+
 .post-list__wrapper h1
   text-align: center
   font-weight: 700
@@ -12,7 +15,7 @@
   text-transform: uppercase
 
 .single-post__wrapper
-  border: 1px solid #bfdacb
+  border: 1px solid $primary-color
   padding: 20px
   height: 200px
   border-radius: 2px
@@ -20,49 +23,31 @@
 .post-btn
   position: absolute
   top: 150px
-  background-color: #bfdacb
-  border: none
-  text-transform: uppercase
-  font-size: 10px
-  font-weight: 700
 
-.close-btn
-  background-color: #bfdacb
+.close-btn, .post-btn
+  background-color: $primary-color
   border: none
   text-transform: uppercase
   font-size: 10px
   font-weight: 700
   color: white
-
-
 
 .post-btn:hover, .close-btn:hover
   color: white
-  background: #bfdacb
+  background-color: $hover-color
 
-.post-btn:focus, .close-btn:focus
-  background-color: #bfdacb
+.post-btn:focus, .close-btn:focus, .post-btn:active, .close-btn:active, .post-btn:active:focus, .btn-default:active:focus
+  background-color: $hover-color
   color: white
-  border-color: #bfdacb
+  border-color: $hover-color
   outline: none
-
-.post-btn:active, .close-btn:active
-  background-color: #bfdacb
-  color: white
-  border-color: #bfdacb
-  outline: none
-
 
 .modal-content
-
-  border: 1px solid #bfdacb
+  border: 1px solid $primary-color
   border-radius: 2px
 
-  .modal-header
-    border-bottom: 1px solid #bfdacb
-
-  .modal-footer
-    border-top: 1px solid #bfdacb
+  .modal-header,  .modal-footer
+    border-bottom: 1px solid $primary-color
 
 
 @media (max-width: 522px)
@@ -74,8 +59,6 @@
     float: right
     position: absolute
     top: 250px
-
-
 
 @media (max-width: 310px)
 
